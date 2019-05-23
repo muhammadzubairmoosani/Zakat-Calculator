@@ -1,0 +1,223 @@
+body, html {
+    padding: 0;
+    margin: 0;
+    background-color: #fff;
+    font-family: sans-serif;
+    height: 100vh;
+    widows: 100vw;
+}
+
+aside {
+    position: fixed;
+    right: -321px;
+    height: 100vh;
+    width: 20em;
+    margin: 0;
+    background-color: #fff;
+    transition: .2s;
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: inherit;
+}
+
+@media (max-width: 479px) {
+    aside {
+        width: auto;
+        font-size: smaller;
+    }
+}
+
+#asideHeader {
+    background-color: #5BCE5E;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 4.5em;
+    padding: 0 11px;
+}
+
+@media (max-width: 479px) {
+    #asideHeader {
+        min-height: 3.6em;
+        max-height: 3.6em;
+    }
+}
+
+#asideHeader span {
+    font-size: x-large;
+    color: #fff;
+    font-weight: 600;
+}
+
+@media (max-width: 479px) {
+    #asideHeader span {
+        position: absolute;
+        left: 94px;
+        font-weight: 500;
+        font-size: x-large;
+    }
+}
+
+aside footer {
+    background-color: #5BCE5E;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    min-height: 2.5em;
+}
+
+aside footer span {
+    color: #fff;
+    font-size: inherit;
+    font-weight: 600;
+}
+
+#asideDetail {
+    margin: 0 7px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.fa-envelope:before {
+    font-size: x-large;
+}
+
+.fa-github:before {
+    font-size: x-large;
+}
+
+.show {
+    right: 0;
+    box-shadow: -3px 0px 10px grey;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+    background-color: #5BCE5E;
+    height: 4.5em;
+    padding: 0 25px;
+}
+
+@media (max-width: 479px) {
+    header {
+        height: 3em;
+    }
+}
+
+header .fa-bars::before {
+    font-size: xx-large;
+}
+
+@media (max-width: 479px) {
+    header .fa-bars::before {
+        font-size: x-large;
+    }
+}
+
+header span {
+    font-weight: 500;
+    font-size: x-large;
+}
+
+#container {
+    width: 65%;
+    margin: 0 auto;
+}
+
+@media (max-width: 767px) {
+    #container {
+        width: 95%;
+    }
+}
+
+.resultDiv {
+    margin: 5px;
+}
+
+#zakatDue {
+    font-size: larger;
+    padding-top: 40px;
+    margin-top: 0;
+}
+
+@media (max-width: 479px) {
+    #zakatDue {
+        font-size: inherit;
+        margin-top: 10px;
+    }
+}
+
+#result {
+    border: 2px solid #666;
+    border-radius: 5px;
+    margin-top: -16px;
+    font-size: 2.5em;
+    height: 1.3em;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width: 479px) {
+    #result {
+        font-size: 1.8em;
+    }
+}
+
+.totalDiv {
+    padding: 5px;
+    background-color: #f5f5f5;
+    font-size: larger;
+}
+
+@media (max-width: 479px) {
+    .totalDiv {
+        font-size: inherit;
+    }
+}
+
+table {
+    width: 100%;
+    height: 17em;
+}
+
+table p, input {
+    outline: none;
+    border: none;
+    width: 100%;
+    font-size: larger;
+    border-bottom: 1px solid #85AF86;
+}
+
+@media (max-width: 479px) {
+    table p, input {
+        font-size: inherit;
+    }
+}
+
+table button {
+    color: #fff;
+    background-color: #5BCE5E;
+    border: none;
+    padding: 10px 10px;
+    margin: 2px 3px;
+    font-size: large;
+    border-radius: 3px;
+}
+
+@media (max-width: 479px) {
+    table button {
+        font-size: smaller;
+    }
+}

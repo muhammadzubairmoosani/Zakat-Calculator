@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+        integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <link rel="stylesheet" href="./styleSheet/styleSheet.css">
+</head>
+
+<body>
+    <aside id="aside">
+        <div id="asideHeader">
+            <span>About</span>
+        </div>
+        <div id="asideDetail">
+            <h2>Zakat Calculator</h2>
+            <p>A simple web-app calculate zakat.</p>
+            <h2>Developer Info</h2>
+            <p>Name: Muhammad Zubair Moosani</p>
+            <i class="far fa-envelope"></i>
+            <a href="mailto:muhammadzubairmoosani@gmail.com">muhammadzubairmoosani@gmail.com</a>
+            <h3>Visit Link:</h3>
+            <i class="fab fa-github"></i>
+            <a href="https://www.github.com/muhammadzubairmoosani" target="_blank">GitHub</a>
+            <p></p>
+        </div>
+        <footer>
+            <span>W3C Validate</span>
+        </footer>
+    </aside>
+    <header>
+        <span>Zakat Calculator</span>
+        <i class="fas fa-bars" onmouseover="showSideBar()"></i>
+    </header>
+    <div id="main-container" onmouseover="closeSideBar()">
+        <div id="container">
+            <div class="resultDiv">
+                <p id="zakatDue">Zakat due</p>
+                <p id="result"></p>
+            </div>
+            <div>
+                <div class="totalDiv">
+                    Total subject to Zakat: <label id="total"></label>
+                </div>
+                <table>
+                    <tr>
+                        <td>Nisab<br>(Price of 85G (3oz) of pure gold)</td>
+                        <td>
+                            <p>12335</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Net Income<br>(e.g Annual salary)</td>
+                        <td><input type="text" id="netIncome"></td>
+                    </tr>
+                    <tr>
+                        <td>Cash on hand</td>
+                        <td><input type="text" id="coh"></td>
+                    </tr>
+                    <tr>
+                        <td>Cash in banks</td>
+                        <td><input type="text" id="cib"></td>
+                    </tr>
+                    <tr>
+                        <td>Gold and silver</td>
+                        <td><input type="text" id="gas"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <button onclick="calculate()">Calculate</button>
+                            <button onclick="reset()">Reset</button>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script src="./scriptFile/script.js"></script>
+</body>
+
+</html>
