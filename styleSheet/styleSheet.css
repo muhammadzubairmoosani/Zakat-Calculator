@@ -153,7 +153,7 @@ header span {
 @media (max-width: 479px) {
     #zakatDue {
         font-size: inherit;
-        margin-top: 10px;
+        padding-top: 10px;
     }
 }
 
