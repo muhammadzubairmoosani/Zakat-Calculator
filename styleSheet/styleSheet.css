@@ -36,6 +36,7 @@ aside {
     justify-content: center;
     align-items: center;
     height: 4.5em;
+    min-height: 4.5em;
     padding: 0 11px;
 }
 
