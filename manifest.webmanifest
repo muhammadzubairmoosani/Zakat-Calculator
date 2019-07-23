@@ -1,7 +1,7 @@
 {
     "name": "My First PWA Web App",
     "short_name": "Zakat-Cal",
-    "start_url": "./index.html",
+    "start_url": "/index.html",
     "display": "standalone",
     "theme_color": "red",
     "background_color": "green",
